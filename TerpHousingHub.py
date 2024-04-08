@@ -13,8 +13,8 @@ class Property:
     """ A class that represents single property listing
 
     Attributes:
-        address (String)
-        ratings (list of floats)
+        address (String) : the address of the listed property
+        ratings (list of floats) : list of ratings (a number 1-5) given by past tennents
         on-campus (bool): true if the listing in on campus, false if listing is off-campus
         apply (string): url or email to apply for the residence
         
