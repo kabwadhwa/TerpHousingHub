@@ -10,7 +10,7 @@ class Hub:
             properties currently in our database of hosing options.
     """
 
-    def add_listing(address, on_off, apply):
+    def add_listing(self, address, on_campus, apply):
         """ Creates a new Property object and adds it to the Housing list.
 
         Args:
@@ -43,6 +43,6 @@ class Property:
         """ Calculates the average rating of a property
 
         Returns:
-            return a float average of the ratings associated with this property
+            float: return a average of the ratings associated with this property
         """
         pass
