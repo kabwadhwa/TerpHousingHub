@@ -1,5 +1,5 @@
 """ 
-This script allows for UMD students to browse through studnet housing 
+This script allows for UMD students to browse through student housing 
 options and leave reviews for their current housing.
 """
 class Hub:
