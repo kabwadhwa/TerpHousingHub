@@ -39,7 +39,6 @@ or_label.pack()
 browse_label.pack(side='left', padx=(15,0))
 browse_field.pack(fill=X, expand=YES)
 
-
 input_lf.pack(fill=X, anchor=N, expand=YES)
 input_frame.pack(fill=BOTH, expand=YES)
 
