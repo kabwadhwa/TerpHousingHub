@@ -1,24 +1,31 @@
 """ 
 This script allows for UMD students to browse through student housing 
 options and leave reviews for their current housing.
-"""
-class Hub:
-    """ A class that represents a collection of housing options
 
-    Attributes:
+Attributes:
         Housing (list of Properties): a list containing all the
             properties currently in our database of hosing options.
+"""
+
+def add_listing(address, on_campus, apply):
+    """ Creates a new Property object and adds it to the Housing list.
+
+    Args:
+        address (string): the addres of the listing
+        on_campus (bool): True if the property is on campus, False otherwise
+        apply (string): information on how to apply for listed property
     """
+    pass
+def find_listing(address):
+    """ Finds a specific Property object in the collection using its address.
 
-    def add_listing(self, address, on_campus, apply):
-        """ Creates a new Property object and adds it to the Housing list.
-
-        Args:
-            address (string): the addres of the listing
-            on_campus (bool): True if the property is on campus, False otherwise
-            apply (string): information on how to apply for listed property
-        """
-        pass
+    Args:
+        address (string): the addres of the listing
+        
+    Returns:
+        Property: returns the Property object that matches the address
+    """
+    pass
 
 class Property:
     """ A class that represents single property listing
