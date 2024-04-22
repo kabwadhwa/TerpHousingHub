@@ -10,7 +10,7 @@ def click():
 #window
 root = ttk.Window(themename = 'morph')
 root.title('TerpHousingHub')
-root.geometry('800x600')
+root.geometry('1000x800')
 
 # title
 title_label = ttk.Label(root, text = "Terp Housing Hub", font = 'Calibri 30')
@@ -37,11 +37,30 @@ or_label = ttk.Label(browse_field, text = "OR", width = 5)
 browse_label = ttk.Label(browse_field, text = "Browse for listings", width = 15)
 or_label.pack()
 browse_label.pack(side='left', padx=(15,0))
+
+#Radio Buttons
+campus = ttk.StringVar()
+on_radio = ttk.Radiobutton(browse_field, text = "On Campus", value = "oncampus", variable = campus)
+on_radio.pack(side=LEFT, padx = 5)
+off_radio = ttk.Radiobutton(browse_field, text = "Off Campus", value = "offcampus", variable = campus)
+off_radio.pack(side=LEFT, padx = 5)
+
+
+#Rating Scale
+rating_field = ttk.Frame(browse_field)
+rating = ttk.DoubleVar(value = 3.5)
+rating_label = ttk.Label(rating_field, text="Minimum Rating of:")
+rating_label.pack(side=LEFT)
+rating_value = ttk.Label(rating_field, textvariable=rating)
+rating_value.pack(side=LEFT)
+rating_scale = tk.Scale(rating_field, from_= 1, to = 5, variable = rating, orient=HORIZONTAL, tickinterval=1, sliderlength = 10, length = 300, resolution=.1, fg = "white")
+rating_scale.pack(side=LEFT, padx=15)
+rating_field.pack(fill=X, expand=YES, padx=20)
+browse_button = ttk.Button(input_lf, text="Browse", width = 8)
+browse_button.pack(padx=5)
 browse_field.pack(fill=X, expand=YES)
-
 input_lf.pack(fill=X, anchor=N, expand=YES)
-input_frame.pack(fill=BOTH, expand=YES)
-
+input_frame.pack(side="bottom", fill=BOTH, expand=YES)
 
 #output field
 output_frame = ttk.Frame(root)
