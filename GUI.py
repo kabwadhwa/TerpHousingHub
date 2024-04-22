@@ -10,7 +10,7 @@ def click():
 #window
 root = ttk.Window(themename = 'morph')
 root.title('TerpHousingHub')
-root.geometry('1000x800')
+root.geometry('1000x900')
 
 # title
 title_label = ttk.Label(root, text = "Terp Housing Hub", font = 'Calibri 30')
@@ -56,8 +56,8 @@ rating_value.pack(side=LEFT)
 rating_scale = tk.Scale(rating_field, from_= 1, to = 5, variable = rating, orient=HORIZONTAL, tickinterval=1, sliderlength = 10, length = 300, resolution=.1, fg = "white")
 rating_scale.pack(side=LEFT, padx=15)
 rating_field.pack(fill=X, expand=YES, padx=20)
-browse_button = ttk.Button(input_lf, text="Browse", width = 8)
-browse_button.pack(padx=5)
+browse_button = ttk.Button(rating_field, text="Browse", width = 8)
+browse_button.pack(side="right", padx=0)
 browse_field.pack(fill=X, expand=YES)
 input_lf.pack(fill=X, anchor=N, expand=YES)
 input_frame.pack(side="bottom", fill=BOTH, expand=YES)
