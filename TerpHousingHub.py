@@ -38,7 +38,9 @@ def browse(on_campus, min_rating):
 
     Returns:
         list: returns a list of properties that match the specifications
-
+    """
+    pass
+    
 class Property:
     """ A class that represents single property listing
 
