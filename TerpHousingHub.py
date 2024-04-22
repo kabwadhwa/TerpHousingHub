@@ -27,6 +27,18 @@ def find_listing(address):
     """
     pass
 
+def browse(on_campus, min_rating):
+    """ Finds as many listings of Properties that fit the specifications of the parameters.
+        If on_campus is True only listings on campus will be returned. If min_rating is 2.5 
+        only Properties with a rating of 2.5 or more will be returned.
+
+    Args:
+        on-campus (boolean): True if listing should be on campus, False if listing should be off campus
+        min-rating (float): the minimum rating a listing should have
+
+    Returns:
+        list: returns a list of properties that match the specifications
+
 class Property:
     """ A class that represents single property listing
 
