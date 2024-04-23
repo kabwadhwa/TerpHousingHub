@@ -29,7 +29,10 @@ def find_listing(address):
     Returns:
         Property: returns the Property object that matches the address
     """
-    pass
+        for listing in housing:
+                if listing.address == address:
+                        return listing
+        return None
 
 def browse(on_campus, min_rating):
     """ Finds as many listings of Properties that fit the specifications of the parameters.
