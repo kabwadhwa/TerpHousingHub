@@ -73,4 +73,7 @@ class Property:
         Returns:
             float: return a average of the ratings associated with this property
         """
-        pass
+        sum = 0
+        for x in self.ratings:
+            sum += x
+        return (sum/len(self.ratings))
