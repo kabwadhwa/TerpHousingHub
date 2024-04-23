@@ -15,7 +15,8 @@ def add_listing(address, on_campus, apply):
         on_campus (bool): True if the property is on campus, False otherwise
         apply (string): information on how to apply for listed property
     """
-    pass
+    listing = 
+
 def find_listing(address):
     """ Finds a specific Property object in the collection using its address.
 
@@ -40,7 +41,7 @@ def browse(on_campus, min_rating):
         list: returns a list of properties that match the specifications
     """
     pass
-    
+
 class Property:
     """ A class that represents single property listing
 
@@ -51,6 +52,9 @@ class Property:
         apply (string): url or email to apply for the residence
         
     """
+    def __init__(self, address, ratings, on_campus, apply):
+
+        
     def add_rating(self, rating):
         """ Allows for someone to rate a property. Rating is added to the ratings attribute
 
