@@ -29,10 +29,17 @@ def find_listing(address):
     Returns:
         Property: returns the Property object that matches the address
     """
+<<<<<<< HEAD
     for listing in housing:
         if listing.address == address:
             return listing
     return None
+=======
+        for listing in housing:
+                if listing.address == address:
+                        return listing
+        return None
+>>>>>>> 33892addf435ecb9ede0aa71a31451a519e3787f
 
 def browse(on_campus, min_rating):
     """ Finds as many listings of Properties that fit the specifications of the parameters.
@@ -76,4 +83,7 @@ class Property:
         Returns:
             float: return a average of the ratings associated with this property
         """
-        pass
+        sum = 0
+        for x in self.ratings:
+            sum += x
+        return (sum/len(self.ratings))
