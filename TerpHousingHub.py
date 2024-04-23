@@ -6,6 +6,7 @@ Attributes:
         Housing (list of Properties): a list containing all the
             properties currently in our database of hosing options.
 """
+housing = []
 
 def add_listing(address, on_campus, apply):
     """ Creates a new Property object and adds it to the Housing list.
@@ -15,7 +16,9 @@ def add_listing(address, on_campus, apply):
         on_campus (bool): True if the property is on campus, False otherwise
         apply (string): information on how to apply for listed property
     """
-    listing = 
+    listing = Property (address, on_campus, apply)
+    housing.append(listing)
+
 
 def find_listing(address):
     """ Finds a specific Property object in the collection using its address.
@@ -52,9 +55,9 @@ class Property:
         apply (string): url or email to apply for the residence
         
     """
-    def __init__(self, address, ratings, on_campus, apply):
+    def __init__(self, address, on_campus, apply):
 
-        
+
     def add_rating(self, rating):
         """ Allows for someone to rate a property. Rating is added to the ratings attribute
 
